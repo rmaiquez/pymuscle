@@ -1,6 +1,9 @@
 from random import sample
 from tabulate import tabulate
 
+#  TODO: get exercises from an external file.
+#  TODO: improve method get
+
 legs = ['Zancadas en suspensión', 'Sentadilla en suspensión', 'Carrera resistida', 'Curl femoral', 'Sentadilla búlgara',
         'Mountain climber']
 chest = ['Press de pecho en suspensión', 'Flexiones con TRX', 'Flexiones con las piernas apoyadas en las asas']
