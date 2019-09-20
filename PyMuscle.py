@@ -2,57 +2,28 @@ from random import sample
 from tabulate import tabulate
 
 #  TODO: get exercises from an external file.
-#  TODO: improve method get
 
 legs = ['Zancadas en suspensión', 'Sentadilla en suspensión', 'Carrera resistida', 'Curl femoral', 'Sentadilla búlgara',
         'Mountain climber']
-chest = ['Press de pecho en suspensión', 'Flexiones con TRX', 'Flexiones con las piernas apoyadas en las asas']
-biceps = ['Curl de Bíceps en TRX']
+chest = ['Press de pecho en suspensión', 'Flexiones con TRX', 'Flexiones con las piernas apoyadas en las anillas']
+biceps = ['Curl de Bíceps en TRX', 'Biceps a dos manos']
 triceps = ['Fondos en TRX', 'Extensiones de tríceps', 'Tríceps kickbacks']
 back = ['Remo en suspensión', 'Superman']
-shoulders = ['Face Pull en TRX']
+shoulders = ['Face Pull en TRX', 'Aperturas en Y']
 abdominal = ['Encogimiento abdominal en suspensión', 'Plancha', 'Plancha lateral']
 
 
-def getlegs():
-    chosenLegs = sample(legs, 2)
-    return ', '.join(chosenLegs)
-
-
-def getchest():
-    chosenChest = sample(chest, 1)
-    return ', '.join(chosenChest)
-
-
-def getbiceps():
-    chosenBiceps = sample(biceps, 1)
-    return ', '.join(chosenBiceps)
-
-
-def gettriceps():
-    chosenTriceps = sample(triceps, 1)
-    return ', '.join(chosenTriceps)
-
-
-def getback():
-    chosenBack = sample(back, 1)
-    return ', '.join(chosenBack)
-
-
-def getshoulders():
-    chosenShoulders = sample(shoulders, 1)
-    return ', '.join(chosenShoulders)
-
-
-def getabdominal():
-    chosenAbdominal = sample(abdominal, 1)
-    return ', '.join(chosenAbdominal)
+def GetElement(muscles):
+    rwork = sample(muscles, 2)
+    return ' -- '.join(rwork)
 
 
 print("-------------------------------------------- ")
 print("Rutina de ejercicios para entrenamiento TRX: ")
 print("-------------------------------------------- ")
 print()
-print(tabulate([['Pierna', getlegs()], ['Pecho', getchest()], ['Biceps', getbiceps()], ['Triceps', gettriceps()],
-                ['Espalda', getback()], ['Hombros', getshoulders()], ['Abdominales', getabdominal()]],
+print(tabulate([['Pierna', GetElement(legs)], ['Pecho', GetElement(chest)], ['Biceps', GetElement(biceps)],
+                ['Triceps', GetElement(triceps)],
+                ['Espalda', GetElement(back)], ['Hombros', GetElement(shoulders)],
+                ['Abdominales', GetElement(abdominal)]],
                headers=['Músculo', 'Ejercicio/s'], tablefmt='orgtbl'))
