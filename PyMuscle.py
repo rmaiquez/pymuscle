@@ -12,7 +12,7 @@ print(tabulate([['Pierna', GetElements(legs)], ['Pecho', GetElements(chest)], ['
                 ['Triceps', GetElements(triceps)],
                 ['Espalda', GetElements(back)], ['Hombros', GetElements(shoulders)],
                 ['Abdominales', GetElements(abdominal)]],
-               headers=['Músculo', 'Ejercicio/s'], tablefmt='orgtbl'))
+               headers=['Músculo', 'Ejercicios'], tablefmt='orgtbl'))
 
 print("\nStore by: ")
 print('. '.join(storeby))

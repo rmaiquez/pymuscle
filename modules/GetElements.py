@@ -1,15 +1,40 @@
 from random import sample
+import json
 
-#  TODO: get exercises from an external file.
+legs = ""
+chest = ""
+biceps = ""
+triceps = ""
+back = ""
+shoulders = ""
+abdominal = ""
+muscle_list = [legs, chest, biceps, triceps, back, shoulders, abdominal]
 
-legs = ['Zancadas en suspensión', 'Sentadilla en suspensión', 'Carrera resistida', 'Curl femoral', 'Sentadilla búlgara',
-        'Mountain climber']
-chest = ['Press de pecho en suspensión', 'Flexiones con TRX', 'Flexiones con las piernas apoyadas en las anillas']
-biceps = ['Curl de Bíceps en TRX', 'Biceps a dos manos']
-triceps = ['Fondos en TRX', 'Extensiones de tríceps', 'Tríceps kickbacks']
-back = ['Remo en suspensión', 'Superman']
-shoulders = ['Face Pull en TRX', 'Aperturas en Y']
-abdominal = ['Encogimiento abdominal en suspensión', 'Plancha', 'Plancha lateral']
+with open('workouts/training.json') as fp:
+    data = json.load(fp)
+
+for muscle in data:
+    if muscle["muscle"] == "legs":
+        legs = muscle["exercises"]
+        muscle_list.append(legs)
+    elif muscle["muscle"] == "chest":
+        chest = muscle["exercises"]
+        muscle_list.append(chest)
+    elif muscle["muscle"] == "biceps":
+        biceps = muscle["exercises"]
+        muscle_list.append(biceps)
+    elif muscle["muscle"] == "triceps":
+        triceps = muscle["exercises"]
+        muscle_list.append(triceps)
+    elif muscle["muscle"] == "back":
+        back = muscle["exercises"]
+        muscle_list.append(back)
+    elif muscle["muscle"] == "shoulders":
+        shoulders = muscle["exercises"]
+        muscle_list.append(shoulders)
+    elif muscle["muscle"] == "abdominal":
+        abdominal = muscle["exercises"]
+        muscle_list.append(abdominal)
 
 
 def GetElements(muscles):

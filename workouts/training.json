@@ -1,0 +1,66 @@
+[
+  {
+    "muscle": "legs",
+    "exercises": [
+      "Zancadas en suspensión",
+      "Sentadilla en suspensión",
+      "Carrera resistida",
+      "Curl femoral",
+      "Sentadilla búlgara",
+      "Mountain climber"
+    ]
+  },
+  {
+    "muscle": "chest",
+    "exercises": [
+      "Press de pecho en suspensión",
+      "Flexiones con TRX",
+      "Flexiones con las piernas apoyadas en las asas"
+    ]
+  },
+  {
+    "muscle": "biceps",
+    "exercises": [
+      "Curl de Bíceps",
+      "Biceps a dos manos",
+      "Biceps Martillo a dos manos en suspensión",
+      "Biceps Gorilla",
+      "Biceps a una mano"
+    ]
+  },
+  {
+    "muscle": "triceps",
+    "exercises": [
+      "Triceps a dos manos neutro",
+      "Extensiones de tríceps",
+      "Triceps a una mano en pronación"
+    ]
+  },
+  {
+    "muscle": "back",
+    "exercises": [
+      "Remo abierto",
+      "Remo cerrado",
+      "Remo cerrado a una mano",
+      "Pull over en suspensión"
+    ]
+  },
+  {
+    "muscle": "shoulders",
+    "exercises": [
+      "Face Pull en TRX",
+      "Deltoides en suspensión",
+      "Aperturas en Y",
+      "Elevación hombros arriba",
+      "Remo abierto"
+    ]
+  },
+  {
+    "muscle": "abdominal",
+    "exercises": [
+      "Encogimiento abdominal en suspensión",
+      "Plancha",
+      "Plancha lateral"
+    ]
+  }
+]
